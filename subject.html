@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>各年段学科统计</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+				background-image: linear-gradient(to left, lightblue, #fff);
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.menu {
+				width: 230px;
+				height: 420px;
+				padding: 20px 0;
+				background-color: rgba(0, 0, 0, 0.5);
+				margin: 50px 0 0 50px;
+				position: relative;
+			}
+
+			.menu .item {
+				height: 42px;
+				/* border: 1px solid red; */
+				color: #fff;
+				font-size: 14px;
+				line-height: 42px;
+				padding-left: 30px;
+				background: url('images/right-jiantou.png') no-repeat 200px 10px;
+				cursor: pointer;
+			}
+
+			.menu .item:hover {
+				background-color: #ff6700;
+				background-image: url('images/right-jiantou2.png');
+			}
+
+			/* 右侧二级菜单 */
+			.menu .item .nav {
+				min-width: 250px;
+				height: 460px;
+				background-color: #fffaf0;
+				border: 1px solid #666;
+				position: absolute;
+				top: 0;
+				left: 100%;
+				box-sizing: border-box;
+				/* 六行单元格平分整个区域 */
+				display: grid;
+				grid-template-rows: repeat(6, 1fr);
+				grid-template-columns: 250px;
+				/* 排列方式设置为先列后行 */
+				grid-auto-flow: column;
+				/* 设置隐式网格宽度 */
+				grid-auto-columns: 250px;
+				padding: 20px;
+				/* 初始默认隐藏 */
+				display: none;
+			}
+
+			.item .nav a {
+				/* border: 1px solid red; */
+				color: #000;
+				display: flex;
+				/* 垂直方向居中对齐,防止随父元素高度而被拉伸 */
+				align-items: center;
+			}
+
+			.item .nav a img {
+				margin-right: 10px;
+			}
+
+			.item .nav a:hover {
+				color: #ff6700;
+			}
+
+			.item:hover .nav {
+				display: grid;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="menu">
+			<div class="item">小学
+				<div class="nav">
+					<a href=""><img src="images/grid-mi-01.webp" alt="" width="40">语文</a>
+					<a href=""><img src="images/grid-mi-02.webp" alt="" width="40">数学</a>
+					<a href=""><img src="images/grid-mi-03.webp" alt="" width="40">英语</a>
+					<a href=""><img src="images/grid-mi-04.webp" alt="" width="40">科学</a>
+					<a href=""><img src="images/grid-mi-05.webp" alt="" width="40">道德与法治</a>
+					<a href=""><img src="images/grid-mi-06.webp" alt="" width="40">音乐</a>
+					<a href=""><img src="images/grid-mi-07.webp" alt="" width="40">美术</a>
+					<a href=""><img src="images/grid-mi-08.webp" alt="" width="40">综合实践</a>
+                    <a href=""><img src="images/grid-mi-09.webp" alt="" width="40">体育</a>
+                </div>
+			</div>
+			<div class="item">初一
+				<div class="nav">
+					<a href=""><img src="images/grid-mi-01.webp" alt="" width="40">语文</a>
+					<a href=""><img src="images/grid-mi-02.webp" alt="" width="40">数学</a>
+					<a href=""><img src="images/grid-mi-03.webp" alt="" width="40">英语</a>
+					<a href=""><img src="images/grid-mi-04.webp" alt="" width="40">生物</a>
+					<a href=""><img src="images/grid-mi-05.webp" alt="" width="40">地理</a>
+					<a href=""><img src="images/grid-mi-06.webp" alt="" width="40">历史</a>
+					<a href=""><img src="images/grid-mi-07.webp" alt="" width="40">政治</a>
+					<a href=""><img src="images/grid-mi-08.webp" alt="" width="40">体育</a>
+					<a href=""><img src="images/grid-mi-09.webp" alt="" width="40">音乐</a>
+					<a href=""><img src="images/grid-mi-10.webp" alt="" width="40">美术</a>
+					<a href=""><img src="images/grid-mi-11.webp" alt="" width="40">心理</a>
+					<a href=""><img src="images/grid-mi-12.webp" alt="" width="40">劳动与闽南</a>
+				</div>
+			</div>
+			<div class="item">初二
+				<div class="nav">
+					<a href=""><img src="images/grid-mi-01.webp" alt="" width="40">语文</a>
+					<a href=""><img src="images/grid-mi-02.webp" alt="" width="40">数学</a>
+					<a href=""><img src="images/grid-mi-03.webp" alt="" width="40">英语</a>
+					<a href=""><img src="images/grid-mi-04.webp" alt="" width="40">生物</a>
+					<a href=""><img src="images/grid-mi-05.webp" alt="" width="40">地理</a>
+					<a href=""><img src="images/grid-mi-06.webp" alt="" width="40">历史</a>
+					<a href=""><img src="images/grid-mi-07.webp" alt="" width="40">政治</a>
+					<a href=""><img src="images/grid-mi-08.webp" alt="" width="40">体育</a>
+					<a href=""><img src="images/grid-mi-09.webp" alt="" width="40">音乐</a>
+					<a href=""><img src="images/grid-mi-05.webp" alt="" width="40">美术</a>
+					<a href=""><img src="images/grid-mi-09.webp" alt="" width="40">心理</a>
+					<a href=""><img src="images/grid-mi-05.webp" alt="" width="40">劳动与闽南</a>
+					<a href=""><img src="images/grid-mi-03.webp" alt="" width="40">物理</a>
+					<a href=""><img src="images/grid-mi-04.webp" alt="" width="40">化学</a>
+				</div>
+			</div>
+			<div class="item">初三
+                <div class="nav">
+                    <a href=""><img src="images/grid-mi-01.webp" alt="" width="40">语文</a>
+					<a href=""><img src="images/grid-mi-02.webp" alt="" width="40">数学</a>
+					<a href=""><img src="images/grid-mi-03.webp" alt="" width="40">英语</a>
+					<a href=""><img src="images/grid-mi-04.webp" alt="" width="40">物理</a>
+					<a href=""><img src="images/grid-mi-05.webp" alt="" width="40">化学</a>
+					<a href=""><img src="images/grid-mi-06.webp" alt="" width="40">历史</a>
+					<a href=""><img src="images/grid-mi-07.webp" alt="" width="40">政治</a>
+					<a href=""><img src="images/grid-mi-08.webp" alt="" width="40">体育</a>
+					<a href=""><img src="images/grid-mi-09.webp" alt="" width="40">音乐</a>
+					<a href=""><img src="images/grid-mi-10.webp" alt="" width="40">美术</a>
+					<a href=""><img src="images/grid-mi-11.webp" alt="" width="40">信息技术</a>
+					<a href=""><img src="images/grid-mi-12.webp" alt="" width="40">心理</a>
+                </div>
+		    </div>
+        </div>
+	</body>
+</html>
